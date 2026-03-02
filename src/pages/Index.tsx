@@ -99,7 +99,7 @@ const Index = () => {
               <Phone className="w-5 h-5" /> (19) 98240-4000
             </a>
             <a className="flex items-center gap-2 hover:underline" href="mailto:kaller@gestaoderiscos.up-im.com">
-              <Mail className="w-5 h-5" /> ekkaller@gmail.com
+              <Mail className="w-5 h-5" /> kaller@gestaoderiscos.up-im.com
             </a>
             <a
               href="https://linkedin.com/in/elzemariokaller"
