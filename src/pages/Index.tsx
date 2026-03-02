@@ -1,12 +1,107 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Shield, Target, FileCheck, Users, Phone, Mail, Linkedin } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpeg";
+
+const services = [
+  {
+    icon: Target,
+    title: "Análise de risco",
+    description: "Identificação e avaliação dos riscos específicos do seu negócio para proteção adequada.",
+  },
+  {
+    icon: Shield,
+    title: "Estratégia de seguros",
+    description: "Planejamento personalizado de coberturas alinhado aos objetivos da sua empresa.",
+  },
+  {
+    icon: FileCheck,
+    title: "Otimização de apólices",
+    description: "Revisão e adequação das suas apólices para melhor custo-benefício.",
+  },
+  {
+    icon: Users,
+    title: "Assessoria especializada",
+    description: "Acompanhamento contínuo e suporte em sinistros e renovações.",
+  },
+];
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* Hero */}
+      <section className="bg-primary text-primary-foreground py-16 md:py-24 px-6">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          <img
+            src={profilePhoto}
+            alt="Elzemario Kaller"
+            className="w-44 h-44 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary-foreground/30 shadow-xl shrink-0"
+          />
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-3">
+              Elzemario Kaller
+            </h1>
+            <span className="inline-block bg-primary-foreground/15 backdrop-blur-sm text-primary-foreground text-xs md:text-sm font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
+              Consultor de Seguros Empresariais
+            </span>
+            <p className="text-primary-foreground/85 leading-relaxed text-base md:text-lg max-w-xl">
+              Com <strong className="text-primary-foreground font-semibold">37 anos de experiência</strong> no mercado de seguros, ofereço{" "}
+              <strong className="text-primary-foreground font-semibold">consultoria especializada</strong> para empresas que buscam{" "}
+              <strong className="text-primary-foreground font-semibold">proteção estratégica</strong> de seus ativos e operações.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="bg-background py-16 md:py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+            Como posso te ajudar
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((s) => (
+              <div
+                key={s.title}
+                className="bg-card rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border"
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <s.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-card-foreground mb-2 font-sans">
+                  {s.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {s.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="bg-primary text-primary-foreground py-14 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-8">
+            Vamos conversar sobre a segurança do seu patrimônio e futuro?
+          </h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm md:text-base">
+            <a href="tel:+5519982404000" className="flex items-center gap-2 hover:underline">
+              <Phone className="w-5 h-5" /> (19) 98240-4000
+            </a>
+            <a href="mailto:ekkaller@gmail.com" className="flex items-center gap-2 hover:underline">
+              <Mail className="w-5 h-5" /> ekkaller@gmail.com
+            </a>
+            <a
+              href="https://linkedin.com/in/elzemariokaller"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:underline"
+            >
+              <Linkedin className="w-5 h-5" /> LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
