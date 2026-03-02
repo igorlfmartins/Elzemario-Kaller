@@ -5,7 +5,7 @@ const services = [
 {
   icon: Search,
   title: "Auditoria de VRD",
-  description: "Verifico tecnicamente o valor real de reposição do seu Prédio, MMU (Máquinas e Utensílios) e MMP (Mercadorias e Matérias-Primas). Se o VRD declarado estiver abaixo do custo real, a seguradora corta sua indenização proporcionalmente — mesmo que você pague o prêmio em dia."
+  description: "Verifico tecnicamente o valor real de reposição do seu Prédio, MMU (Máquinas e Utensílios) e MMP (Mercadorias e Matérias-Primas). Se o VRD declarado estiver abaixo do custo real, a seguradora corta sua indenização proporcionalmente, mesmo que você pague o prêmio em dia."
 },
 {
   icon: Crown,
@@ -15,12 +15,12 @@ const services = [
 {
   icon: HandCoins,
   title: "Engenharia de Risco e Lucros Cessantes",
-  description: "Calculo o MDP (Máximo Dano Provável) e o PMP (Perda Máxima Possível) da sua operação. Além disso, calibro a cobertura de Lucros Cessantes considerando o lead time real de reposição de maquinário — porque reconstruir uma fábrica leva meses, mas repor um equipamento importado pode levar mais de um ano."
+  description: "Calculo o MDP (Máximo Dano Provável) e o PMP (Perda Máxima Possível) da sua operação. Além disso, calibro a cobertura de Lucros Cessantes considerando o lead time real de reposição de maquinário. Porque reconstruir uma fábrica leva meses, mas repor um equipamento importado pode levar mais de um ano."
 },
 {
   icon: Users,
   title: "Gestão de LMI e Defesa Técnica",
-  description: "Atuo como seu Red Team antes do sinistro: analiso as condições gerais, identifico cláusulas de exclusão que podem invalidar sua apólice e garanto que o Limite Máximo de Indenização (LMI) seja matematicamente suficiente para reconstruir sua operação — não apenas cobrir parte dela."
+  description: "Atuo como seu Red Team antes do sinistro: analiso as condições gerais, identifico cláusulas de exclusão que podem invalidar sua apólice e garanto que o Limite Máximo de Indenização (LMI) seja matematicamente suficiente para reconstruir sua operação, não apenas cobrir parte dela."
 }];
 
 
@@ -47,9 +47,9 @@ const Index = () => {
             </p>
             <p className="text-primary-foreground/85 leading-relaxed text-sm md:text-base max-w-xl">
               Para indústrias com patrimônio acima de R$ 2,5 milhões, um erro silencioso na declaração do Valor em Risco (VRD) ativa a{" "}
-              <strong className="text-primary-foreground font-semibold">Cláusula de Rateio</strong> — e transforma sua apólice em um documento que paga apenas uma fração do sinistro. Com{" "}
+              <strong className="text-primary-foreground font-semibold">Cláusula de Rateio</strong>, e transforma sua apólice em um documento que paga apenas uma fração do sinistro. Com{" "}
               <strong className="text-primary-foreground font-semibold">37 anos de experiência no mercado segurador</strong>, audito apólices de incêndio com precisão técnica e cirúrgica para garantir que, no dia mais difícil da sua empresa, a indenização cubra{" "}
-              <strong className="text-primary-foreground font-semibold">100% da reposição real dos seus ativos</strong> — sem cortes, sem surpresas, sem negativas.
+              <strong className="text-primary-foreground font-semibold">100% da reposição real dos seus ativos</strong>. Sem cortes, sem surpresas, sem negativas.
             </p>
           </div>
         </div>
